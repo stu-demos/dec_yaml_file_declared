@@ -3,7 +3,7 @@ pipeline {
         kubernetes {
             label 'my-pod-template'
             defaultContainer 'jnlp'
-            yamlFile 'declarative/yaml_file_declared/KubernetesPod.yaml'
+            yamlFile 'KubernetesPod.yaml'
         }
     }
     stages {
