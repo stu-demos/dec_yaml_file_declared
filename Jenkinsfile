@@ -13,7 +13,8 @@ pipeline {
                     sh 'mvn -version'
                 }
                 container('busybox') {
-                   script{
+                    sh 'echo running'
+                   /*script{
                        try {
                            sh 'exit 1'
                        }
@@ -22,6 +23,7 @@ pipeline {
 
                        }
                    }
+                   */
                 }
             }
         }
